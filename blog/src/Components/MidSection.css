@@ -1,0 +1,391 @@
+.active{
+    border-radius: 5px;
+    box-shadow: inset 1px 1.732px 0px rgba(255,255,255,0.58);
+    background-color: #0087c2;
+    border: 1px solid #006fa0;
+    color: white;
+}
+.mid-section{
+    width: 100%;
+    height: 525px;
+    background-color:#006896;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.mid-section::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: url(src/images/bg-black-circle.png)  top no-repeat , url(src/images/bg-black-circle-down.png)  bottom no-repeat;
+    background-size: 100% 30%,100% 30%;
+    background-color: #006896;
+    background-blend-mode: color-dodge;
+}
+.mid-section-inner{
+    max-width: 1005px;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 999;
+    display: flex;
+}
+.mid-left{
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner-section{
+    border-radius: 15px;
+    background-color: #0087c2;
+}
+.banner-img-grup{
+    width: 651px;
+    height: 256px;
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: left -380px;
+    border-radius: 15px;
+}
+/* banner overlay  */
+.banner-overlay{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px 10px 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.8;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.overlay-heading{
+    font-size: 19px;
+    color: #00c3e4;
+    font-family: "Koz Go Pr6 N";
+}
+.overlay-info{
+    font-size: 11px;
+    color: #ffffff;
+    font-family: "Tahoma";
+}
+.overlay-viewall{
+    display: flex;
+    justify-content: end;
+}
+.viewall-link{
+    font-size: 11px;
+    color: #00c3e4;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.banner-blog{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+
+.arrow-svg{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    box-shadow: inset 1px 1.732px 0px rgba(255,255,255,0.58);
+    background-color: #074a75;
+    border: 1px solid #006fa0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-svg svg{
+    fill: white;
+}
+.blog-columns{
+    display: flex;
+    gap: 10px;
+}
+
+.blog-img{
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    box-shadow: inset 0.5px 0.866px 1.5px rgba(0,0,0,0.76);
+    background-color: #ccf3fa;
+    border: 2px solid #0074af;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0px;
+    border-radius: 5px;
+}
+.blog-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.blog-title{
+    font-size: 12px;
+    color: #16ebfe;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.blog-timing{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+
+}
+.about-blog{
+    opacity: 0.800;
+    font-size: 11px;
+    color: #ffffff;
+    font-family: "Tahoma";
+}
+.mid-right{
+    width: 100%;
+}
+.player-section{
+    position: relative;
+    border-radius: 15px;
+    box-shadow: inset 1px 1.732px 0px rgba(255,255,255,0.58);
+    background-color: #0087c2;
+    border: 1px solid #006fa0;
+}
+.player-arrow-icon{
+    width: 20px ;
+    height: 25px;
+    background-image: url('src/images/arrow-icon.png');
+    background-color: black;
+}
+.player-arrow-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.player-heading{
+    font-size: 19px;
+    color: #fefefe;
+    font-family: "Koz Go Pro";
+    filter: drop-shadow(-0.5px -0.866px 0px rgba(0,0,0,0.3));
+    padding: 20px 0 10px 10px;
+    background-image: url(src/images/bg-player-indicator.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center 16px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.music-player{
+    border-radius: 15px;
+    box-shadow: inset -0.518px -1.932px 0px rgba(255,255,255,0.75);
+    background-image: linear-gradient(0deg, #d5d5d5 0%, #ffffff 100%);
+    border: 1px solid #c1c1c1;
+    /* height: 253px; */
+}
+.player-inner{
+    /* height: 228px; */
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1.732px 0px rgba(255,255,255,0.58);
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.about-music-artist{
+    opacity: 0.800;
+    border-radius: 5px;
+    filter: drop-shadow(0.5px 0.866px 0px rgba(255,255,255,0.75));
+    box-shadow: inset 0.5px 0.866px 1px rgba(0,0,0,0.43);
+    background-color: #ffffff;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+.music-img-wrap{
+    width: 52px;
+    height: 52px;
+    box-shadow: inset 0.5px 0.866px 1.5px rgba(0,0,0,0.76);
+    background-color: #ccf3fa;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+.song-icon{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.artist-name{
+    font-size: 11px;
+    color: #00587e;
+    font-weight: bold;
+    font-family: "Tahoma";
+}
+.song-sub-heading{
+    font-size: 11px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Tahoma";
+}
+.curr-song-n-range-wrapper{
+    opacity: 0.800;
+    border-radius: 5px;
+    filter: drop-shadow(0.5px 0.866px 0px rgba(255,255,255,0.75));
+    box-shadow: inset 0.5px 0.866px 1px rgba(0,0,0,0.43);
+    background-color: #ffffff;
+    padding: 10px;
+}
+.name-n-volume{
+    display: flex;
+    justify-content: space-between;
+}
+.curr-song{
+    font-size: 11px;
+    color: #00577d;
+    font-weight: bold;
+    font-family: "Tahoma";
+    }
+.volume-range{
+    filter: drop-shadow(0.5px 0.866px 0px rgba(255,255,255,0.75));
+    box-shadow: inset 0.5px 0.866px 1px rgba(0,0,0,0.43);
+    background-color: #cdc6c6;
+}
+.song-time{
+    font-size: 11px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Tahoma";
+    text-align: right;
+}
+.song-range{
+    width: 100%;
+}
+.song-skip-range{
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    filter: drop-shadow(0.5px 0.866px 0px rgba(255,255,255,0.75));
+    box-shadow: inset 0.5px 0.866px 1px rgba(0,0,0,0.43);
+    background-color: #d0cccc;
+    border-radius: 5px;
+}
+.song-skip-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 57px;
+    height: 12px;
+    border-radius: 5px;
+    box-shadow: inset -1.176px -1.618px 0px rgba(255,255,255,0.54);
+    background-image: linear-gradient(0deg, #00c3e3 0%, #0087c1 100%);
+    border: 1px solid rgba(0,135,194,0.91);
+    cursor: pointer;
+  }
+.previous-song-info{
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+}
+.previous-song-name{
+    font-size: 11px;
+    color: #00587e;
+    font-weight: bold;
+    font-family: "Tahoma";
+    border-radius: 5px;
+    filter: drop-shadow(0.5px 0.866px 0px rgba(255,255,255,0.75));
+    box-shadow: inset 0.5px 0.866px 1px rgba(0,0,0,0.43);
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+.player-buttons-wrap{
+    background-image: url('src/images/player-button-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    z-index: 9;
+   }
+.player-button{
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-around;
+}
+.btn-separator{
+    border: 1px solid #bbb;
+    margin: 15px 0 10px;
+}
+.player-btn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 17px 10px 10px 10px;
+    cursor: pointer;
+}
+.player-btn svg{
+    fill: #0087c2;
+}
+.rotate-svg-icon{
+    rotate: 180deg;
+}
+
+/* listen fm wrappperrr   */
+.listen-fmblog-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.listen-heading{
+    font-size: 19px;
+    color: #ffffff;
+    font-family: "Koz Go Pr6 N";
+    filter: drop-shadow(-0.5px -0.866px 0px rgba(0,0,0,0.3));
+}
+.listen-heading span{
+    color: #00c3e4;
+}
+.listen-inner-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.mike-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #006896;
+}
+.mike-img{
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+.about-listen-wrap{
+   flex: 1;
+    opacity: 0.800;
+    font-size: 11px;
+    color: #ffffff;
+    font-family: "Tahoma";
+    word-break: break-all;
+}
